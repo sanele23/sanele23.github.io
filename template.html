@@ -14,15 +14,29 @@
         <h2>Sanele Krakra</h2>
     </header>
     <main>
-        <h3>Add Two Numbers</h3>
-        <label>Enter Number One: <input type="text" id="number1"></label>
-      <label>Enter Number Two: <input type="text" id="number2"></label>
-        <label><button onclick="addNumbers()">Add Numbers</button></label>
+        <h3>Build City State Address</h3>
+        <label>Please enter a city: <input type="text" id="city"></label>
+      <label>Please enter the country name: <input type="text" id="country"></label>
+        <label><button onclick="buildAddress()">Build the address</button></label>
         <hr>
         <p><span id="output"></span></p>
     </main>
     <footer>
         &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
     </footer>
+
+    <script>
+        function buildAddress() {
+        // Input - Get the input of city name and country name from the user
+        // city, country
+        const city = document.querySelector('#city').value;
+        const country = document.querySelector('#country').value;
+        // Process - the objective is to combine the2 inputs into this format - city, country
+        let output = city + ', ' + country
+        // Output - city, country
+        document.getElementById('output').innerHTML = output;
+        }
+
+    </script>
 </body>
 </html>

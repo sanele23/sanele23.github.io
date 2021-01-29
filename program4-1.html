@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 4: Add two numbers</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Add Two Numbers</h3>
+        <label>Enter number One: <input type="text" id="number1"></label>
+      <label>Enter number Two: <input type="text" id="number2"></label>
+        <label><button onclick="addNumbers()">Add Numbers</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function addNumbers() {
+        // Input - User will enter the numbers on text fields
+        let num1 = document.getElementById('number1').value;
+        num1 = parseFloat(num1); // Converts string to float
+
+        let num2 = document.getElementById('number2').value;
+        num2 = parseFloat(num2); // Converts string to float
+
+        // Process - the objective is to combine the2 inputs into this format - city, country
+        let addition = num1 + num2
+        
+        // Output - total sum
+        document.getElementById('output').innerHTML = addition;
+        }
+
+    </script>
+</body>
+</html>
