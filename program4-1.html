@@ -19,7 +19,9 @@
       <label>Enter number Two: <input type="text" id="number2"></label>
         <label><button onclick="addNumbers()">Add Numbers</button></label>
         <hr>
+        <p> <span id="display"></span></p>
         <p><span id="output"></span></p>
+        
     </main>
     <footer>
         &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
@@ -35,10 +37,14 @@
         num2 = parseFloat(num2); // Converts string to float
 
         // Process - the objective is to combine the2 inputs into this format - city, country
+        let display = 'The added numbers equal: '
         let addition = num1 + num2
         
-        // Output - total sum
+        // Output - total sum output
+       
+        document.getElementById('display').innerHTML = display;
         document.getElementById('output').innerHTML = addition;
+        
         }
 
     </script>
