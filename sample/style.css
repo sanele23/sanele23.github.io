@@ -3,13 +3,55 @@
     padding: 0px;
     box-sizing: border-box;
 }
+/* Home page layout */
+main{
+  
+  max-width: 880px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+
+
+
+main .blocktext{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    
+}
+h1{
+    text-align: center;
+    padding: 30px;
+}
+h2{
+    text-align: center;
+    padding: 30px;
+}
+main .images {
+  position: relative;
+  width: 50%;
+    text-align: left;
+    display: flex;
+    padding-right: 20px;
+}
+main .image {
+  display: block;
+  width: 25%;
+  height: auto;
+    border-radius: 50%;
+    
+}
+
 
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #5D4954;
+    background-color: black;
+    opacity: 0.5;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -57,7 +99,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color:rgb(226, 205, 205);
+    background-color: #f0f0f0;
     background-size: cover;
 }
 .contact .content{
@@ -67,12 +109,12 @@ nav{
 .contact .content h2{
     font-size: 36px;
     font-weight: 500;
-    color: #fff;
+    color: #262626;
 }
 .contact .content p{
     
     font-weight: 300;
-    color: #fff;
+    color: #262626;
 }
 .container{
     width: 100%;
@@ -118,6 +160,7 @@ nav{
     width: 40%;
     padding: 40px;
     background: #fff;
+    border: 2px solid #262626;
 }
 .contactForm h2{
     font-size: 30px;
@@ -172,6 +215,22 @@ nav{
 
 
 /* -- End -- */
+
+/* footer */
+.footer{
+    position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightblue;
+  color: white;
+  text-align: center;
+}
+.footer p{
+    padding: 10px;
+    margin: auto;
+}
+/* the end */
 
 /* Mobile layout */
 @media (max-width: 991px){
