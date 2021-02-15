@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 5: Exam Part 2</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Cylinder volume</h3>
+        <label>Height: <input type="text" id="height"></label>
+      <label>Radius: <input type="text" id="radius"></label>
+        <label><button onclick="addNumbers()">Calculate volume of cylinder</button></label>
+        <hr>
+        <p> <span id="display"></span></p>
+        <p><span id="output"></span></p>
+        
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function addNumbers() {
+        // Input - User will enter the numbers on text fields
+        let number1 = document.getElementById('height').value;
+        number1 = parseFloat(number1); // Converts string to float
+
+        let number2 = document.getElementById('radius').value;
+        number2 = parseFloat(number2); // Converts string to float
+
+        // Process - the objective is to combine the2 inputs into this format - city, country
+        let display = 'The volume total: '
+        let volume = number1 * Math.PI * number2
+        
+        // Output - total sum output
+       
+        //document.getElementById('display').innerHTML = display;
+        document.getElementById('output').innerHTML = number1 + number2 + volume ;
+        
+        }
+
+    </script>
+</body>
+</html>

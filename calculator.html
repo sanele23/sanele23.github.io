@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <h1>Week 6: Calculator</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Calculate numbers</h3>
+        <label>Please enter first number: <input type="text" id="numb1"></label>
+        <label>Please enter second number: <input type="text" id="numb2"></label>
+        <select id="operator">
+            
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="X">X</option>
+        </select>
+        <input type="text" id="result"/>
+        
+        <button onclick="calc();">Check results</button>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script src="calculator.js">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> Exam Program 1 </title>
+
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 5: Exam Part 2</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Calculate Employee Salary</h3>
+        <label>Please enter regular hours worked: <input type="text" id="normal"></label>
+      <label>Please enter overtime hours worked: <input type="text" id="overtime"></label>
+        <label><button onclick="addNumbers()">Calculate gross pay</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function addNumbers() {
+        // Input - Get the input of city name and country name from the user
+        // city, country
+        let regularPay = document.querySelector('#normal').value;
+        regularPay = parseFloat(regularPay);
+        let overtimePay = document.querySelector('#overtime').value;
+        overtimePay = parseFloat(overtimePay);
+        // Process - the objective is to combine the2 inputs into this format - city, country
+        
+        let taxAmount = .15((15 * regularPay) + (22.5 * overtimePay) - tax_amount)
+        let display = 'Gross pay: $';
+        let gross = (15 * regularPay) + (22.5 * overtimePay) - tax_amount
+
+        
+        // Output - city, country
+        document.getElementById('output').innerHTML = 'Gross pay: $' + gross + taxAmount;
+        }
+
+    </script>
+</body>
+</html>
