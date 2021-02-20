@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"/>
+    <title>Week 7: Discount Program</title>
+</head>
+<body>
+    <header>
+        <h1>Week 7: Discount Program</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Tuesday or Wednesday Special</h3>
+        <label>Please enter subtotal <input type="text" id="subtotal"></label>
+      
+        <label><button onclick="calculateDiscount()">Total Cost</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function calculateDiscount() {
+        // Input - Get the input of city name and country name from the user
+        // city, country
+        let subtotal = parseFloat(document.querySelector('#subtotal').value);
+        
+        var dayOfWeek = new Date().getDay();
+
+        let totalAmount;
+
+        //let discount = 0;
+        // Process 
+        if (subtotal > 50 && dayOfWeek == 2 || dayOfWeek == 3) {
+            totalAmount = subtotal - (subtotal * 0.1);
+        } else {
+            totalAmount = subtotal + (subtotal * 0.06);
+        }
+        // Output 
+        document.getElementById('output').innerHTML = 'Your total due is $'+totalAmount;
+    }
+    </script>
+</body>
+
+</html>

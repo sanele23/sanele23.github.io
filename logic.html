@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 7: Logical Operators in Condition</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Testing</h3>
+        <label>Username: <input type="text" id="username"></label>
+      <label>Password: <input type="password" id="password"></label>
+        <label><button onclick="checkCredentials()">Add numbers</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function checkCredentials() {
+            // Input values
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            let validLogin = false;
+            let message = "";
+            // Processing
+            if (username.toLowerCase() == "sanele" && password == "HELLO") {
+                    validLogin = true;
+                    message = "Welcome aboard.";
+                
+            } else {
+                message = "That user does not exist.";
+            }
+            // Output
+            document.getElementById('output').innerHTML = '<strong>'+ message + '</strong>';
+        }
+    </script>
+
+</body>
+</html>
