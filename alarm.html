@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"/>
     <title>Week 7 - Alarm</title>
 </head>
 <body>
-    <h1>Sanele Krakra - Alarm assignment</h1>
+    <header>
+        <h1>Week 7: Alarm Activity</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+    
+        
+      <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
 
     <script>
         var now = new Date();
@@ -23,13 +35,14 @@
         if (dayOfWeek == 6 || dayOfWeek == 0) {
             message = "Sleep In! " + dayOfWeek;
         }
-        else if (holiday == "01 January" || holiday2 == "04 July" || holiday3 == "December 25"){
+        else if (holiday == 0 || holiday2 == 6 || holiday3 == 11){
             message = "Sleep In!";
         }
         else {
             message = "Get Up!"
         }
         alert(message);
+        document.getElementById('output').innerHTML = message;
     </script>
 </body>
 </html>
