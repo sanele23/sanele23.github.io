@@ -28,19 +28,30 @@
         var dayOfWeek = now.getDay();
         let message = "Get Up!";
 
-        let holiday = new Date("01 January, 2020");
-        let holiday2 = new Date("04 July, 2020");
-        let holiday3 = new Date("25 December, 2020");
+        //let holiday = new Date("1 January, 2020");
+        //let holiday2 = new Date("4 July, 2020");
+        //let holiday3 = new Date("25 December, 2020");
 
         if (dayOfWeek == 6 || dayOfWeek == 0) {
             message = "Sleep In! " + dayOfWeek;
         }
-        else if (holiday == 0 || holiday2 == 6 || holiday3 == 11){
-            message = "Sleep In!";
+        else if (month == 0 && dayOfMonth == 1) {
+            message = "Sleep In!" + now;
         }
+        else if (month == 6 || dayOfMonth || 4) {
+            message = "Sleep In!" + now;
+        }
+        else if (month == 11 || dayOfMonth == 25) {
+            message = "Sleep In!" + now;
+        }
+
+       // else if (holiday == 0 || holiday2 == 6 || holiday3 == 11){
+        //    message = "Sleep In!";
+        //}
         else {
             message = "Get Up!"
         }
+        // Output
         alert(message);
         document.getElementById('output').innerHTML = message;
     </script>
