@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 8: Odd Numbers Sum</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Sum Odd Numbers</h3>
+        <label>Please enter a number: <input type="text" id="number"></label>
+      
+        <label><button onclick="oddNumbers()">Sum</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function oddNumbers() {
+        // Input - Get the input of city name and country name from the user
+        // city, country
+        const number = document.querySelector('#number').value;
+        let sum = 0;
+        let outcome = '';
+        // Process - the objective is to combine the2 inputs into this format - city, country
+        for (let i=1; i<=number; i++) {
+            if(i%2 !== 0) {
+                //document.getElementById('output').value = i + "<br>";
+                outcome = outcome + "Number: " + i + '<br>';
+                sum = sum + i;
+            }
+        }
+
+    // Output - city, country
+    document.getElementById('output').innerHTML = outcome + 'Total odd numbers:' + sum;
+        
+}
+        
+
+    </script>
+</body>
+</html>
