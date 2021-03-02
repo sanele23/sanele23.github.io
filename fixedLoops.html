@@ -17,7 +17,7 @@
         <h3>Fixed Loops</h3>
         
       
-        <label><button onclick="fixed()">Sum</button></label>
+        <label><button onclick="fixed()">Display Outputs</button></label>
         <hr>
         <p><span id="display1"></span></p>
         <p><span id="display2"></span></p>
@@ -53,7 +53,7 @@
             }
             document.getElementById('display2').innerHTML = output2;
 
-            // DIsplay 3
+            // Display 3
             let output3 = '';
 
             for (let k = 0; k < 4; k++) {
@@ -63,23 +63,25 @@
 
             // Display 4
             let balance = 1000;
-            const rate = .10;
+            let rate = .10;
             let n = 30;
-            for (let s = 0; s < n; s++)
+            
+            for (let s = 1; s < n; s++) {
+
                 interest = balance * rate;
 
-                //balance = balance * (Math.pow((1 + (rate/ 30)), (30 * s)));
-                
-                
-                
-                //balance += interest;
+                //balance = balance * (Math.pow((1 + (rate * s)), (n * 15)));
 
-                balance = balance*(Math.pow(1 + (rate / n)), (n * .10));
+                //interest = Math.round(interest * 100) / 100;
 
+                balance += interest;
+            }
 
-            document.getElementById('display4').innerHTML = balance;
+            document.getElementById('display4').innerHTML = (balance).toFixed(2);
         
     }
+
+
         
 
     </script>
