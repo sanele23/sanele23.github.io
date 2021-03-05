@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 9: Multiplies of Five</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Multiplies of 5 Time table</h3>
+        
+        <label><button onclick="timesFive()">Begin Muliplication of 5</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function timesFive() {
+        let outcome = ""; // The table output HTML
+        
+
+        for (i = 1; i <= 12; i++) {
+            let multiply = 5;
+            let results = i * 5;
+            
+            outcome += multiply + " X " + i + " = " + results + "<br>";
+        }
+        document.getElementById('output').innerHTML = outcome;
+    }
+
+    </script>
+</body>
+</html>
