@@ -20,11 +20,11 @@
 
     let output;
     // Processing:
-    if (one + two > 20 || one > 5 && two > 5 || one < 5 && two > 5) {
+    if (one + two > 20 || one > 5 && two > 5 || one < 0 ^ two > 5) {
         predict = "True";
 
     }
-    else if (one + two < 20 || one < 5 && two > 5 || one < 5 && two < 5) {
+    else if (one + two < 20 || one < 5 && two > 5 || one < 5 ^ two < 5) {
         predict = "False";
     }
     
