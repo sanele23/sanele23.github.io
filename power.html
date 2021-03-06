@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> Exams </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 9: Exam 2</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Power</h3>
+        
+        <label><button onclick="powerCalculate()">Display Results</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+
+        function powerCalculate() {
+            let outcome = "";
+            let toPower = 2;
+        for (i = 1; i <= 31; i++) {
+            
+            let results = Math.pow(2, i);
+            
+            outcome += toPower + ", " + results;
+        }
+        document.getElementById('output').innerHTML = outcome;
+
+    }
+ 
+    </script>
+</body>
+</html>

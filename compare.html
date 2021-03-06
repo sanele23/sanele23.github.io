@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Exam 2.2</title>
+</head>
+<body>
+  <p>Please enter two numbers:</p>
+  <input type="text" id="one" size="5"><br>
+  <input type="text" id="two" size="5">
+  <button type="button" onclick="compareInt()">Click</button>
+  <div id="output"></div>
+
+  <script>
+      function compareInt() {
+    // Input:
+    let one = parseInt(document.getElementById('one').value);
+    let two = parseInt(document.getElementById('one').value);
+    let predict = one + two;
+
+    let output;
+    // Processing:
+    if (one + two > 20 || one > 5 && two > 5 || one < 5 && two > 5) {
+        predict = "True";
+
+    }
+    else if (one + two < 20 || one < 5 && two > 5 || one < 5 && two < 5) {
+        predict = "False";
+    }
+    
+    // Output:
+    document.getElementById('output').innerHTML = predict;
+}
+  </script>
+</body>
+</html>

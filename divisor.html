@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Exam 2: Divisor</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Divisor</h3>
+        <label>enter start number: <input type="text" id="start"></label>
+        <label>enter end number: <input type="text" id="end"></label>
+        <label>enter divisor number: <input type="text" id="divisor"></label>
+
+        <label><button onclick="divi()">Output</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function divi() {
+        // Input - Get the input of city name and country name from the user
+        // city, country
+        let start = parseInt(document.getElementById('start').value);
+        let end = parseInt(document.getElementById('end').value);
+        let divisor = parseInt(document.getElementById('divisor').value);
+
+        // Process - the objective is to combine the2 inputs into this format - city, country
+        let output = start + ' ' + end + ' ' + divisor;
+
+        for (let divisor = 0;  divisor <= end;  divisor++) {
+            output = output % divisor;
+        // Output - city, country
+        document.getElementById('output').innerHTML = output;
+        }
+
+    </script>
+</body>
+</html>
