@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 10: Functions Assignment</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Windchill</h3>
+        <label>Enter temperature in fahrenheit: <input type="text" id="temperature"></label>
+        <label>Enter wind speed: <input type="text" id="windspeed"></label>
+
+        <label><button onclick="doInputOutput()">Wind Chill</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function doInputOutput() {
+        // Input
+        let tempF = parseFloat(document.getElementById('temperature').value);
+        let speed = parseFloat(document.getElementById('windspeed').value);
+        // Process
+        let windchill = windChill(tempF, speed);
+        // Output
+        if (tempF > 50 || speed < 3) {
+            alert('The degree must not exceed 50 & speed must not exceed 3')
+        }
+        else {
+            document.getElementById('output').innerHTML = windchill.toFixed(2);
+        }
+        
+    }
+
+        function windChill(x, y) {
+            let windchill = 35.74 + 0.6215 * x - 35.75 * Math.pow(y, 0.16) + 0.4275 * x * Math.pow(y, 0.16);
+
+                return windchill;
+            }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 10: Functions</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Functions</h3>
+        <label>Enter number: <input type="text" id="one"></label>
+      <label>Enter number: <input type="text" id="two"></label>
+        <label><button onclick="addNumbers()">Add Numbers</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function addNumbers() {
+        // Input
+        let num1 = parseInt(document.getElementById('one').value);
+        let num2 = parseInt(document.getElementById('two').value);
+        // Process
+        let sum = addTwoNumbers(num1, num2);
+        // Output
+        document.getElementById('output').innerHTML = sum;
+        }
+
+        function addTwoNumbers(x, y) {
+            let sum = x + y;
+
+            return sum;
+        }
+
+    </script>
+</body>
+</html>
