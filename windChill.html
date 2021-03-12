@@ -35,7 +35,7 @@
         let windchill = windChill(tempF, speed);
         // Output
         if (tempF > 50 || speed < 3) {
-            alert('The degree must not exceed 50 & speed must not exceed 3')
+            alert('The degree must not exceed 50 OR speed must not be less than 3.')
         }
         else {
             document.getElementById('output').innerHTML = windchill.toFixed(2);
