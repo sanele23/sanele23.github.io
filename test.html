@@ -7,14 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <label><button onclick="calculate()">Build the address</button></label>
+    <label><button onclick="randomInteger()">Build the address</button></label>
         <hr>
         <p><span id="output"></span></p>
     <script>
-        function calculate() {
-            for (let i = 0;  i > 3;  i++) {
-            alert("Goodbye");
-}
+ function randomInteger() {
+    let min = 5;
+    let max = 11;
+
+    // Call the Math.random and Math.floor functions.
+    let r = min + Math.floor(Math.random() * (max - min));
+
+    // Display the random integer for the user to see.
+    document.getElementById('output').innerHTML = r;
 }
         
     </script>
