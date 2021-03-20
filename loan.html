@@ -44,7 +44,7 @@
         let results = computePayment(principal, annualRate, years, periodsPerYear);
         // Output
         
-        document.getElementById('output1').innerHTML = results.toFixed(2);
+        document.getElementById('output1').innerHTML = '$' + results.toFixed(2);
 
         function computePayment(principal, annualRate, years, periodsPerYear) {
             let a = principal;
@@ -66,9 +66,9 @@
             let numberOfPaymentPaidToDate = parseFloat(document.getElementById('numberOfPaymentPaidToDate').value);
 
             // Process
-            let outcome = computePayment(principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate);
+            let outcome = computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate);
 
-            document.getElementById('output2').innerHTML = outcome.toFixed(2);
+            document.getElementById('output2').innerHTML = '$' + outcome.toFixed(2);
 
             function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate) {
                 let a = principal;
