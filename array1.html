@@ -56,36 +56,40 @@
         }
 
         // Second function
-        function addEnds(list1) {
+        function addEnds(list) {
 
-            var list1 = [ 17, 8, 9, 5, 20 ];
-            //var list = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+            var list = [ 17, 8, 9, 5, 20 ];
+            var list = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+
+            if (list !== 0) {
+
+                return list[0] + list[list.length - 1];
+            }
+            else {
+                return list[0] + list[list.length - 1];
+            }
+            //let value = lists[0] + lists[lists.length - 1];
+
+           // return value, values;
             
-            let a = list1[0];
-            let b = list1[list1.length - 1];
-
-            let output = a + b;
-
-            return output;
-        
+            //return values;
         }
 
-        function addEnds(list2) {
-
-            
-            var list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
-
-            let x = list2[0];
-            let y = list2[list2.length - 1];
-
-            let outcome = x + y;
-
-            return output;
-
-        }
 
         // Third function to get average
-        function getMiddle() {
+        function getMiddle(list) {
+            //var list = [ 17, 8, 9, 5, 20 ];
+            let length = list.length;
+            let middle = Math.floor(length/2);
+
+            if (length % 2 === 0) {
+                // if even
+                return (list[middle - 1] + list[middle]) / 2;
+            }
+            else {
+                // if odd
+                return list[middle];
+            }
 
         }
     </script>
