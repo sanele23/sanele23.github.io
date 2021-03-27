@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 11: Invest Assignment</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Investment Calculator</h3>
+        
+
+        <label><button onclick="test()">Compute payoff amount</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        /* Defining Table
+        * Input: no user input
+        * Processing: Test the addEnds and getMiddle functions by calling them.
+        * Output: The values returned from the addEnds and getMiddle functions.
+        */
+        function test() {
+
+            let list1 = [ 17, 8, 9, 5, 20 ];
+            let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+
+            // Test the addEnds function by calling it two times.
+            let sum1 = addEnds(list1);
+            let sum2 = addEnds(list2);
+
+            // Test the getMiddle function by calling it two times.
+            let mid1 = getMiddle(list1);
+            let mid2 = getMiddle(list2);
+
+            // Build a string to display to the user.
+            let output =
+                    sum1 + '<br>' +
+                    sum2 + '<br>' +
+                    mid1 + '<br>' +
+                    mid2;
+
+            // Display the output string for the user to see.
+            document.getElementById('output').innerHTML = output;
+        }
+
+        // Second function
+        function addEnds(list1) {
+
+            var list1 = [ 17, 8, 9, 5, 20 ];
+            //var list = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+            
+            let a = list1[0];
+            let b = list1[list1.length - 1];
+
+            let output = a + b;
+
+            return output;
+        
+        }
+
+        function addEnds(list2) {
+
+            
+            var list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+
+            let x = list2[0];
+            let y = list2[list2.length - 1];
+
+            let outcome = x + y;
+
+            return output;
+
+        }
+
+        // Third function to get average
+        function getMiddle() {
+
+        }
+    </script>
+</body>
+</html>
