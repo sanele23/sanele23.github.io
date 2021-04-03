@@ -14,7 +14,7 @@
         <h2>Sanele Krakra</h2>
     </header>
     <main>
-        <h3>Arrays</h3>
+        <h3>Arrays 2 </h3>
         
 
         <label><button onclick="test()">Display Results</button></label>
@@ -26,13 +26,13 @@
     </footer>
 
     <script>
+
         /* Defining Table
         * Input: no user input
-        * Processing: Test the addEnds and getMiddle functions by calling them.
-        * Output: The values returned from the addEnds and getMiddle functions.
+        * Processing: Test the countEvens and multiply functions by calling them.
+        * Output: The values returned from the countEvens and multiply functions.
         */
         function test() {
-
             let list1 = [ 17, 8, 9, 5, 20 ];
             let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
 
@@ -48,33 +48,41 @@
             let output =
                     count1 + '<br>' +
                     count2 + '<br>' +
-                    mult1 + '<br>' +
-                    mult2;
+                    '['+mult1 + ']' + '<br>' +
+                    '[' + mult2 + ']';
 
             // Display the output string for the user to see.
             document.getElementById('output').innerHTML = output;
-            
         }
-
-        // Second function
+        // The count even numbers function 
         function countEvens(list) {
+            var count = 0;
 
-            let count;
+            for (var i = 0; i < list.length; i++) {
+                // See how many can divide by 2 and have 0 as remainder
+                if(list[i] % 2 == 0) {
+                    
+                  // Go through the array index to check even numbers
+                   count++;
 
-            for (let i = 0; i < list.length; i++) {
-                
-                if(list[i] % 2 === 0) {
-                    // index is even
-                   count.push(list[i]);
-
-                   
-                }
-            return count;  
+                } 
+               
+            }
+            return count;
         }
-        
 
-        // Third function to get average
-    }
+        // Multiply elements inside array function
+        function multiply(list, multiplier) {
+            
+            for (let i = 0; i < list.length; i++) {
+                list[i] *= multiplier;
+
+            } return list;
+
+
+        }
+
     </script>
+
+
 </body>
-</html>
