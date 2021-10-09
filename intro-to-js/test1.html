@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 10: Functions Assignment</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Windchill</h3>
+        <label>Enter your first name: <input type="text" id="firstName"></label>
+        <label>Enter your last name: <input type="text" id="lastName"></label>
+
+        <label><button onclick="getNames()">Display Names</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function getNames() {
+        // Input
+        let givenName = document.getElementById('firstName').value;
+        let familyName = document.getElementById('lastName').value;
+        // Process
+        let output = makeFullName(givenName, familyName);
+        // Output
+        
+        document.getElementById('output').innerHTML = output;
+
+
+        function makeFullName(x, y) {
+
+
+        let outcome = x + ', ' + y;
+
+        return outcome;
+}
+        }
+    </script>
+</body>
+</html>

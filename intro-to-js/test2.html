@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 11: Invest Assignment</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Investment Calculator</h3>
+        <label>start <input type="text" id="startValue"></label>
+        <label>end<input type="text" id="endValue"></label>
+        <label>months<input type="text" id="months"></label>
+        
+
+        <label><button onclick="calculate()">Compute Future Value</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function calculate() {
+        // Input
+        let startValue = parseFloat(document.getElementById('startValue').value);
+        let endValue = parseFloat(document.getElementById('endValue').value);
+        let months = parseFloat(document.getElementById('months').value);
+        
+        // Process
+        let d = depreciation(startValue, endValue, months);
+        // Output
+        
+        document.getElementById('output').innerHTML = '$' + d.toFixed(2);
+     
+
+        function depreciation(startValue, endValue, months) {
+            let m = months;
+            let s = startValue;
+            let e = endValue;
+
+            let d = (s - e) / m;
+            
+
+        return d;
+    }
+}
+    </script>
+</body>
+</html>

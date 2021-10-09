@@ -1,44 +1,215 @@
+/* Adjust the image elements */
+
+/* Global styles
+----------------------------------- */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit
+}
+
 body {
-	text-align: center;
-}
-header,
-footer {
-	background-color: #000;
-	color: #fff;
-	padding: 10px;
+    color: #343434;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: auto;
+    line-height: 1.5;
 }
 
-footer {
-	font-size: 13px;
-	letter-spacing: 1.5pt;
+img {
+    width: 300px;
 }
 
-h1,
+a{
+    color: #cced18;
+}
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1;
+}
+
 h2 {
-	margin: 0;
+    
+    font-size: 35px;
 }
 
-h2, #currentdate {
-	color: yellow;
+/* Heading font */
+h1, h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0;
 }
 
-main {
-	margin: 10px auto;
-	border: 1px solid #999;
-	padding: 10px;
-	max-width: 500px;
-	background-color: #abe;
-	box-shadow: 0 0 30px;
+.content-wrap {
+    max-width: 900px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: left;
 }
 
 h3 {
-	font-size: 24px;
-	margin: 0 0 15px 0;
-	border-bottom: 1px solid #333;
-	padding: 0;
+    margin-bottom: 0;
 }
 
-label {
-	display: block;
-	margin: 5px;
+.item-details h3 + p {
+    font-style: italic;
+}
+
+.item-details h3 ~ p {
+    margin: 0;
+}
+
+.divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+/* Profile
+----------------------------------- */
+header {
+    background: 
+        /* transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.8), 
+          rgba(0, 0, 0, 0.8)
+        ),
+        /* bottom, image */
+        url(../images/coding-background.jpg);
+
+    color: #F7FFF7;
+    background-size: cover;
+    background-position: top right;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Projects
+----------------------------------- */
+.projects {
+    background: #F7FFF7;
+}
+
+.projects a {
+    color: #2F3061;
+}
+
+
+.projects .btn {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background: rgba(47, 48, 97, 80%);
+}
+
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+
+
+.project-item h3 {
+    margin-top: 0;
+}
+/* Work Experience
+----------------------------------- */
+.work {
+    background: #9696b9;
+}
+
+
+/*
+.content-wrap {
+    width: 950px;
+    margin: 0 auto;
+}
+*/
+
+/* Education
+----------------------------------- */
+.education {
+    background:
+        linear-gradient(
+        rgba(0, 0, 0, .8),
+        rgba(0, 0, 0, .8)
+        ),
+        url(../images/joanna-kosinska-unsplash.jpg);
+    color: aliceblue;
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+
+.education p {
+    width: 60%;
+}
+
+/* Contact Info
+----------------------------------- */
+footer {
+    background: #343434;
+    color: #F7FFF7;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;  
+}
+
+.contact-list a{
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Responsive Layout
+----------------------------------- */
+@media screen and (min-width: 750px) {
+    
+    header, footer {
+        text-align: center;
+    }
+/* make it a single column for smaller screen devices */ 
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+/* Grid to only affect large screen devices */
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 749px) {
+    
+    h1 {
+        font-size: 55px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    
+    .contact-list a {
+        padding: 5px;
+    }
 }

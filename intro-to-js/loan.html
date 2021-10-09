@@ -65,7 +65,7 @@
             let periodsPerYear = parseFloat(document.getElementById('periodsPerYear').value);
             let numberOfPaymentPaidToDate = parseFloat(document.getElementById('numberOfPaymentPaidToDate').value);
 
-            // Process
+            // Process - Call the function
             let outcome = computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate);
 
             document.getElementById('output2').innerHTML = '$' + outcome.toFixed(2);

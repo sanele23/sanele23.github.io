@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title> CIT 160 Template </title>
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Week 12: Array Assignment</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Arrays</h3>
+        
+
+        <label><button onclick="average()">Display Results</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Sanele Krakra &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        /* Defining Table
+        * Input: no user input
+        * Processing: Test the addEnds and getMiddle functions by calling them.
+        * Output: The values returned from the addEnds and getMiddle functions.
+        */
+        function average() {
+
+            let list1 = [ 70, 1010, 950, 2014, 6 ];
+            let list2 = [ -72.3, 3000, 873, 2312, 68, 7501.3 ];
+            let list3 = [ 70, 950, 671, 6 ];
+
+           
+            let last1 = averageBig(list1);
+            let last2 = averageBig(list2);
+            let last3 = averageBig(list3);
+
+      
+            let output =
+                    last1 + '<br>' +
+                    last2 + '<br>' +
+                    last3;
+
+           
+            document.getElementById('output').innerHTML = output;
+        }
+
+        
+        function averageBig(list) {
+            
+            let length = list.length;
+
+            let avg = sum / 2;
+            let sum = list.length;
+
+            for (let i = 0; i < list.length; i++)
+
+                if (list[i]  >= 1000) {
+                    
+                    
+
+                    return list[i] / (list[i].length);
+                }
+                else {
+                    
+                    let outcome = 0;
+
+                    return outcome;
+                }
+
+        }
+    </script>
+</body>
+</html>
