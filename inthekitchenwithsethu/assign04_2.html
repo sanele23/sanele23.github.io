@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-08">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Import CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Site | Home Page</title>
+
+    <!-- Internal styling -->
+    <style>
+        
+        .title span {
+            color: #ff0157;
+        }
+
+        .title p {
+            color: #fff;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 100px;
+            z-index: 10000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.5s;
+            background-color: black;
+        }
+
+        section {
+            padding: 150px;
+        }
+
+        .contact {
+            justify-content: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+        .contactForm {
+            justify-content: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <a href="assign04.html" class="logo"><img src="logo.jpeg" alt="logo" width="150"></a>
+        <ul class="navigation">
+            <li><a href="assign04.html">Home</a></li>
+            <li><a href="assign04.html">Menu</a></li>
+            <li><a href="assign04.html">About</a></li>
+            <li><a href="assign04.html">Expert</a></li>
+            <li><a href="assign04_2.html">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="title">
+            <h1><span>C</span>ontact</h1>
+            <br>
+            <p>To contact us, please fill in the form and we'll keep in touch!</p>
+        </div>
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Name"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+        </div>
+    </footer>
+    
+    <!-- JavaScript scripting -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+
+</html>
