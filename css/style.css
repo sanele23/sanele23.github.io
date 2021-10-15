@@ -17,9 +17,9 @@ body {
     line-height: 1.5;
 }
 
-img {
+/* img {
     width: 300px;
-}
+} */
 
 a{
     color: #cced18;
@@ -98,7 +98,6 @@ header {
     background: #F7FFF7;
 }
 
-
 .projects a {
     color: #2F3061;
 }
@@ -148,7 +147,7 @@ header {
         rgba(0, 0, 0, .8),
         rgba(0, 0, 0, .8)
         ),
-        url(../images/joanna-kosinska-unsplash.jpg);
+        url(../images/sharon-mccutcheon-unsplash.jpg);
     color: aliceblue;
     background-size: cover;
     background-position: top right;
@@ -159,22 +158,28 @@ header {
     width: 60%;
 }
 
+
 /* Contact Info
 ----------------------------------- */
-footer {
-    background: #343434;
-    color: #F7FFF7;
+.footer-content {
+    text-align: center;
+    color: #fff;
+    background-color: #555;
+    padding: 20px;
 }
 
-.contact-list {
-    list-style-type: none;
-    padding: 0;  
+.footer-content p {
+    color: #fff;
 }
 
-.contact-list a{
-    padding: 15px;
-    display: inline-block;
+.footer-content .social {
+    display: inline-flex;
+    padding: 5px;
 }
+
+/* .footer-content .social img {
+    width: 40;
+} */
 
 /* Responsive Layout
 ----------------------------------- */
