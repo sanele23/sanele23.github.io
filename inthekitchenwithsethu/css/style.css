@@ -37,7 +37,7 @@ p {
           rgba(0, 0, 0, 0.8)
         ),
         /* bottom, image */
-        url("cover-photo.jpg");
+        url("../images/cover-photo.jpg");
     background-size: cover;
 }
 
@@ -267,7 +267,7 @@ section {
           rgba(0, 0, 0, 0.8)
         ),
         /* bottom, image */
-        url("contact-cover.jpg");
+        url("../images/contact-cover.jpg");
     background-size: cover;
 }
 

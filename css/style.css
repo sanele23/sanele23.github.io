@@ -4,6 +4,7 @@
 ----------------------------------- */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit
@@ -73,9 +74,85 @@ h3 {
 .divider > section:last-of-type {
     border-bottom: none;
 }
+
+/* Nav */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+nav.sticky {
+    background: #272738;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+nav.sticky .logo {
+    color: #111;
+}
+nav .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+nav .logo span {
+  color: #ff0157;
+}
+
+nav .navigation {
+    position: relative;
+    display: flex;
+    
+}
+nav .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+nav .navigation li a:hover {
+    color: rgb(209, 26, 26);
+}
+
+nav.sticky .navigation li a:hover {
+    color: rgb(209, 26, 26);
+}
 /* Profile
 ----------------------------------- */
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
 header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: 
         /* transparent black, faked with gradient */ 
         linear-gradient(
@@ -87,9 +164,7 @@ header {
 
     color: #F7FFF7;
     background-size: cover;
-    background-position: top right;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    
 }
 
 /* Projects
@@ -124,6 +199,65 @@ header {
 
 .project-item h3 {
     margin-top: 0;
+}
+
+/* Web Development Projects
+----------------------------*/
+.projects-web {
+    background-color: #cfabba;
+    padding: 30px;
+}
+
+.title {
+    width: 100%;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects-web .project-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.projects-web .project-content .box {
+    width: 340px;
+    height: auto;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
+}
+
+.projects-web .project-content .box .imgBox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.projects-web .project-content .box .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.projects-web .project-content .box .imgBox text {
+    padding: 15px 0 5px;
+}
+.projects-web .project-content .box .imgBox text h3 {
+    font-weight: 400;
+    color: #111;
+}
+.projects-web .project-content .box .imgBox text p {
+    font-weight: 100;
+    color: #111;
+    font-size: 1em;
 }
 /* Work Experience
 ----------------------------------- */
@@ -188,6 +322,24 @@ header {
     header, footer {
         text-align: center;
     }
+    /* Nav */
+    /* nav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+    
+    nav .navigation {
+        display: none;
+    }
+
+    nav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    } */
 /* make it a single column for smaller screen devices */ 
     .project-item img {
         float: left;
