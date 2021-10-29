@@ -1,86 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-      
-      <!-- Set screen size according to device -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Sanele Krakra Portfolio</title>
-      
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Sanele Krakra | Software Developer</title>
       
       <!-- Google fonts -->
-      <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  
   </head>
+
   <body>
-    <main>
-      <!-- ***********************  ABOUT / PROFILE  *********************** -->
-      <nav>
-        <!-- <a href="#home" class="active">Logo</a> -->
+    <!-- Navbar -->
+    <nav>
+        <h1><a href="#about">Sanele Krakra</a></h1>
         <ul class="navigation">
-          <li><a href="#content-wrap">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#work">Work Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <!-- <li><a href="assign04_2.html">Contact</a></li> -->
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
         </ul>
-      </nav>
-      <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a> -->
-      <header>
-          <div class="content-wrap" id="content-wrap">
-          
-            <h1>Hello, I'm Sanele Krakra</h1>
-            <h2>Software Developer</h2>
-
-            <p>I have worked as a Junior Web Developer for 1 year (between 2018 - 2019). I gained working experience with the ASP.NET Framework (C#, HTML/CSS, JavaScript) and MySQL database. I work well with others and diligently do and complete any given tasks. </p>
-            <p>I am currently a student at Brigham Young University-Idaho (online). I am pursuing a Bachelors Degree, majoring in Applied Technology.</p>
-              
-          </div>
-      </header>
-
-      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section class="projects" id="projects">
-          <div class="content-wrap divider">
-            <h2>Python Projects</h2>
-            <p>
-              As an aspiring software developer, I have done a number of projects. 
-              To gain access to all my projects, please visit my GitHub account: 
-              <a  href="https://github.com/sanele23">github.com</a>.
-            
-            </p>
-
-            <!-- Copy the whole <section> block to add more projects. -->
-            <section class="project-item">
-            <img src="images/skeet-game.png" alt="skeet game play image." width="300">
-              <h3>Skeet Game Development Project</h3>
-              <p>
-                A game that simulates skeet shooting. The object of the game is to hit the intended targets,
-                 and not other "safe" ones.
-                 The game was built using the Python Arcade Library.
-              </p>
-              <a class="btn" href="https://github.com/sanele23/python-projects/blob/main/skeet-game/skeet.py" target="_blank">View project source code</a>
-            </section>
-              
-            <section class="project-item">
-            <img src="images/asteroids-game.png" alt="asteroid game play image." width="300">
-              <h3>Asteroids Game Development Project</h3>
-              <p>Classic asteroid game. The purpose of the game if to evade and destroy asteroid objects that threaten to destroy your ship. The game was built using the Python Arcade Library.</p>
-              <a class="btn" href="https://github.com/sanele23/python-projects/tree/main/asteroid-game" target="_blank">View project source code</a>
-            </section>
-              
-            <section class="project-item">
-            <img src="images/data-analysis.png" alt="data analysis graph." width="300">
-              <h3>Data Analysis Project - NBA Basketball Data</h3>
-              <p>Use Python to process NBA data file (csv), calculate values, and produce graphs. The tools used for this project include: pandas, matplotlib, seaborn, numpy.</p>
-              <a class="btn" href="https://github.com/sanele23/python-projects/tree/main/data-analysis-nba" target="_blank">View project source code</a>
-            </section>
-            <!-- End of Project block. -->
-          </div>
-      </section>
-
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
+    <!-- Hero Section -->
+  <section class="hero" id="about">
+      <img
+        src="images/wfh_1.svg"
+        alt="jane-doe"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          I'm an online student pursuing his degree in applied technology. I
+          am flexible and capable of balancing my school and work life
+          without it hindering my dedication to work performance. Studying
+          online has enabled me to gain the skills of working remotely and
+          collaboration with others by using tools such as, Slack, Git/GitHub,
+          Zoom etc.
+        </p>
+      </div>
+  </section>
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
       <section class="work" id="work">
@@ -88,8 +74,6 @@
             <h2>Work Experience</h2>
             <p>To view my full work history experience, visit my <a href="https://www.linkedin.com/in/sanele-krakra-b28aa4130/">LinkedIn profile.</a></p>
           
-        
-
             <!-- Copy this whole <section> block to add more jobs. -->
               
               <!-- Job 1 -->
@@ -117,12 +101,112 @@
             <!-- End of Job block. -->
         </div>
       </section>
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
 
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="icons/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="icons/icons8-css3.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="icons/icons8-python.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="icons/icons8-java.gif"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="images/asteroids-game.png"
+            alt="asteroid"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Asteroid Game</h3>
+          <p class="project-details">
+            Classic asteroid game. The purpose of the game if to evade and destroy asteroid objects that 
+            threaten to destroy your ship. The game was built using the Python Arcade Library.
+          </p>
+          <a href="https://github.com/sanele23/python-projects/tree/main/asteroid-game" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="images/skeet-game.png"
+            alt="skeet-game"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Skeet Game</h3>
+          <p class="project-details">
+            A game that simulates skeet shooting. The object of the game is to hit the intended targets,
+            and not other "safe" ones.
+            The game was built using the Python Arcade Library.
+
+          </p>
+          <a href="https://github.com/sanele23/python-projects/tree/main/skeet-game" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="images/data-analysis.png"
+            alt="data-analysis"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">NBA Data Analysis</h3>
+          <p class="project-details">
+            Use Python to process NBA data file (csv), calculate values, and produce graphs. 
+            The tools used for this project include: pandas, matplotlib, seaborn, numpy.
+          </p>
+          <a href="https://github.com/sanele23/python-projects/tree/main/data-analysis-nba" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
       <section class="education" id="education">
           <div class="content-wrap item-details">
             <h2>Education</h2>
-
+              <br>
+              
             <!-- Copy this whole <section> block to add more schools. -->
               
               <!-- Education 1 -->
@@ -138,7 +222,8 @@
                 and system administration.
               </p>
             </section>
-              
+              <br>
+              <br>
               <!-- Education 2 -->
             <section>
               <h3>BYU-Pathway Worldwide</h3>
@@ -146,7 +231,8 @@
               <br>
               <p>A year-long program teaching life skills, English, algebra, and personal finance.</p>
             </section>
-              
+              <br>
+              <br>
               <!-- Education 3 -->
             <section>
               <h3>CTI Education-Group - East London</h3>
@@ -164,44 +250,45 @@
         <!-- End of School block. -->
           </div>
       </section>
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://twitter.com/Sanelekrakra" target="_blank"
+        ><img
+          src="icons/icons8-twitter-circled.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.instagram.com/sanele.krakra/" target="_blank"
+        ><img
+          src="icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/sanele-krakra-b28aa4130/" target="_blank"
+        ><img
+          src="icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/sanele23" target="_blank"
+        ><img src="icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"><img src="icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"/> </i>
+    <!-- Footer section -->
+    
+    <!-- Website scripts -->
+    <script src="js/app.js"></script>
 
-      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-      <footer>
-        <div class="footer-content">
-            <h3>You can reach out to me on these social platforms.</h3>
-            <br>
-            <div class="social">
-                <a href="https://www.instagram.com/sanele.krakra/">
-                    <img src="images/instagram-icon.png" alt="instagram page link" width="40">
-                </a>
-            </div>
-
-            <div class="social">
-                <a href="mailto:smaqhubela@gmail.com">
-                    <img src="images/gmail-icon.png" alt="email link" width="40">
-                </a>
-            </div>
-
-            <div class="social">
-                <a href="https://www.facebook.com/sanele.krakra/">
-                    <img src="images/facebook-icon.png" alt="instagram page link" width="40">
-                </a>
-            </div>
-
-            <div class="social">
-              <a href="https://www.linkedin.com/in/sanele-krakra-b28aa4130/">
-                  <img src="images/linkedin-icon.png" alt="linkedin page link" width="40">
-              </a>
-          </div>
-        </div>
-    </footer>
-    </main>
-
-    <script type="text/javascript">
-      window.addEventListener('scroll', function(){
-          const header = document.querySelector("nav");
-          header.classList.toggle("sticky", window.scrollY > 0);
-      });
-    </script>
+    <!-- Ion icons scripts -->
+    <script
+      type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
