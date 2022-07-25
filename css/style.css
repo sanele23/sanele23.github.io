@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&display=swap');
 /* Variables */
 
 :root {
-    --font-family: "Roboto", sans-serf;
+    --font-family: 'Comfortaa', cursive;
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
     --bg-color: #fcfcfc;
     --primary-color: #4756df;
-    --secondary-color: #ff7235;
+    --secondary-color: #daa941;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
     --bottom-margin: 0.5rem;
@@ -88,16 +88,16 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
+    background-color: rgb(26, 22, 22);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav h1 {
-    color: var(--primary-color);
+    color: var(--bg-color);
 }
   
 nav a {
-    color: var(--primary-color);
+    color: var(--bg-color);
     transition: var(--transition);
 }
 nav a:hover {
@@ -124,32 +124,44 @@ nav ul li {
 }
 
 /* ---------- Hero ---------- */
-.hero {
+.cover-header {
+    width: 100%;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-    margin: auto;
-    padding: 75px;
+    gap: 0.5rem;
+    /* max-width: 68.75rem; */
+    margin: 0;
+    padding: 45px;
+    background:
+        linear-gradient(
+        rgba(0, 0, 0, .8),
+        rgba(0, 0, 0, .8)
+        ),
+        url(../images/coding-background.jpg);
+    background: cover;
+    background-position: no-repeat;
+    color: var(--bg-color);
 }
 
-.hero img {
-    height: 37.5rem;
-    width: 37.5rem;
-    border-radius: 6px;
-}
+/* .hero img {
+    height: 17.5rem;
+    width: 20.5rem;
+    border-radius: 100px;
+} */
   
-.bio {
+.bio-title {
+    font-size: 40px;
+    color: var(--bg-color);
+    text-align: center;
+    border-bottom: 1px solid #343434;
     width: 25rem;
     padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
 }
   
-.bio h1 {
-    margin-bottom: var(--bottom-margin);
-}
   
 .bio p {
     line-height: var(--line-height);
@@ -208,7 +220,7 @@ nav ul li {
 }
 
 .icon-card {
-    background-color: #fff;
+    background-color: rgba(24, 8, 8, 0.082);
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
     padding: 20px;
@@ -293,15 +305,19 @@ nav ul li {
 /* ---------- Social Icons ----------- */
 .socials {
     display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 1%;
-    bottom: 50%;
+    flex-direction: row;
+    padding: 20px;
+    gap: .5rem;
+    /* position: fixed; */
+    /* right: 1%; */
+    /* bottom: 50%; */
 }
   
 .socicon {
     width: 2rem;
     height: 2rem;
+    border-radius: 60%;
+    
 }
 
 /* ---------- Footer ---------- */
@@ -327,12 +343,13 @@ nav ul li {
     }
     nav ul {
         position: fixed;
-        background-color: var(--bg-color);
+        background-color: rgb(26, 22, 22);;
         flex-direction: column;
         top: 86px;
         left: 10%;
         width: 80%;
-        text-align: center;
+        text-align: left;
+        padding: 20px;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
     }
@@ -350,10 +367,13 @@ nav ul li {
     }
 
     .hero {
+        margin-left: -4rem;
         margin-top: -4rem;
+        margin-right: -4rem;
         flex-direction: column;
         gap: 0;
         padding: 20px;
+        /* margin: 0; */
     }
     
     .hero img {
@@ -388,16 +408,23 @@ nav ul li {
         grid-template-columns: 1fr 2fr;
         column-gap: 20px;
     }
+    .socicon {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 60%;
+        
+    }
 }
 
 @media screen and (max-width: 420px) {
     .hero img {
-      height: 37.5rem;
-      width: 23rem;
+      height: 2rem;
+      width: 2rem;
     }
   
-    .bio {
-      width: 18.3rem;
+    .cover-header {
+      width: 100%;
+      margin: 0;
     }
   
     .project-container {
