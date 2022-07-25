@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&family=M+PLUS+1p:wght@100&display=swap');
 /* Variables */
 
 :root {
@@ -153,11 +154,12 @@ nav ul li {
 } */
   
 .bio-title {
-    font-size: 40px;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 3rem;
     color: var(--bg-color);
     text-align: center;
     border-bottom: 1px solid #343434;
-    width: 25rem;
+    /* width: 25rem; */
     padding: 0.625rem;
     /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
 }
@@ -367,13 +369,17 @@ nav ul li {
     }
 
     .hero {
-        margin-left: -4rem;
+        /* margin-left: -1.5rem; */
         margin-top: -4rem;
-        margin-right: -4rem;
+        /* margin-right: -1.2rem; */
         flex-direction: column;
         gap: 0;
         padding: 20px;
         /* margin: 0; */
+    }
+    
+    .cover-header {
+        width: 100%;
     }
     
     .hero img {
