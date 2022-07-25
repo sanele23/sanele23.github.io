@@ -328,7 +328,7 @@ nav ul li {
 /* ---------- Scroll ----------- */
 .scroll-up {
     position: fixed;
-    right: 0.5%;
+    right: 3.5%;
     bottom: 3%;
     cursor: pointer;
 }
@@ -374,7 +374,7 @@ nav ul li {
         /* margin-right: -1.2rem; */
         flex-direction: column;
         gap: 0;
-        padding: 20px;
+        /* padding: 20px; */
         /* margin: 0; */
     }
     
