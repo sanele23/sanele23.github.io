@@ -102,6 +102,10 @@ p {
   left: 0;
 }
 
+.money p {
+  font-size: 10px;
+  text-align: center;
+}
 /* Courses */
 .course-container {
   margin-top: -40px;
