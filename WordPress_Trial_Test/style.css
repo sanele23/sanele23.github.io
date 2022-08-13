@@ -197,6 +197,9 @@ p {
   /* border-radius: 50%; */
 }
 
+.about p {
+  font-size: 1.4rem;
+}
 .row-buttons {
   display: flex;
   gap: 20px;
