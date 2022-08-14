@@ -233,13 +233,9 @@ p {
 
 .instructor {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
-.isntructor-details {
-  line-height: 10px;
-  border-right: 1px solid white;
-}
 /* Responsive layout */
 @media(max-width:991px) {
   .wave {
@@ -253,7 +249,7 @@ p {
   }
 
   .about {
-    height: 50vh;
+    height: 60vh;
   }
 
   section {
