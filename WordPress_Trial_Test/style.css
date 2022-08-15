@@ -117,7 +117,7 @@ p {
 /* Courses */
 .course-container {
   margin-top: -40px;
-  background: #dedeec;
+  background: #e8edee;
   height: 170vh;
   /* margin: 2rem;
   max-height: calc(100% - 80px); */
@@ -276,7 +276,7 @@ p {
 }
 
 /* Responsive layout */
-@media(max-width:991px) {
+@media (max-width:991px) {
   .wave {
     display: none;
   }
@@ -288,20 +288,20 @@ p {
   }
 
   .about {
-    height: 65vh;
+    height: 65%;
     padding-top: 40px;
   }
 
   section {
     /* padding: 2rem; */
-    height: 60vh;
+    height: 60%;
   }
   .float-right {
     float: none;
   }
 
   .course-container {
-    height: 40vh
+    height: 40%;
   }
 
   .instructor {
@@ -323,3 +323,4 @@ p {
     /* width: 800px; */
   }
 }
+

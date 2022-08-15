@@ -19,12 +19,12 @@
     --transition: 0.3s;
 }
   /* Variables end */
-  
+
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
-  
+
 /*   CSS Resets */
 *, *:before, *:after {
   box-sizing: inherit;
@@ -71,16 +71,16 @@ span {
 ul {
     list-style-type: none;
 }
-  
+
 a {
     text-decoration: none;
     color: #1049c4;
 }
-  
+
 a:hover {
     color: var(--secondary-color);
 }
-  
+
 body {
     font-family: var(--font-family);
 }
@@ -102,7 +102,7 @@ nav {
 nav h1 {
     color: var(--bg-color);
 }
-  
+
 nav a {
     color: var(--bg-color);
     transition: var(--transition);
@@ -111,12 +111,12 @@ nav a:hover {
     color: var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
 }
-  
+
 nav ul {
     display: flex;
     gap: 1.9rem;
 }
-  
+
 nav ul li {
     font-weight: var(--bold-font);
 }
@@ -158,7 +158,7 @@ nav ul li {
     width: 20.5rem;
     border-radius: 100px;
 } */
-  
+
 .bio-title {
     font-family: 'M PLUS 1p', sans-serif;
     font-size: 3rem;
@@ -169,8 +169,8 @@ nav ul li {
     padding: 0.625rem;
     /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
 }
-  
-  
+
+
 .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
@@ -182,12 +182,12 @@ nav ul li {
     background-color: var(--bg-color);
     padding: 1rem 6rem;
 }
-  
+
 .more-about h2 {
     margin-bottom: var(--bottom-margin);
     text-align: center;
 }
-  
+
 .more-about p {
     line-height: var(--line-height);
     padding: 0.4rem;
@@ -211,15 +211,15 @@ nav ul li {
     text-align: center;
     margin-top: 2.5rem;
 }
-  
+
 .skill-header {
     margin-bottom: 1rem;
 }
-  
+
 .skills-wrapper img {
     padding: 1.25rem;
 }
-  
+
 .icon {
     width: 11.875rem;
     height: 11.25rem;
@@ -240,7 +240,7 @@ nav ul li {
     /* padding: 32px 0; */
     /* margin-top: 2rem; */
 }
-  
+
 .project-pic {
     width: 65%;
     height: 60%;
@@ -251,7 +251,7 @@ nav ul li {
     width: 300;
 }
 */
-  
+
 .projects-container {
     display: flex;
     flex-basis: auto;
@@ -264,7 +264,7 @@ nav ul li {
     text-align: center;
     margin-bottom: 1rem;
 }
-  
+
 .project-container {
     text-align: center;
     width: 21.875rem;
@@ -274,15 +274,15 @@ nav ul li {
 .project-container p {
     padding: 0.4rem;
 }
-  
+
 .project-title {
     margin-bottom: var(--bottom-margin);
 }
-  
+
 .project-details {
     margin-bottom: var(--bottom-margin);
 }
-  
+
 .project-card {
     background-color: #fff;
     border-radius: 11px;
@@ -321,12 +321,12 @@ nav ul li {
     /* right: 1%; */
     /* bottom: 50%; */
 }
-  
+
 .socicon {
     width: 2rem;
     height: 2rem;
     border-radius: 60%;
-    
+
 }
 
 /* ---------- Footer ---------- */
@@ -339,7 +339,7 @@ nav ul li {
     bottom: 3%;
     cursor: pointer;
 }
-  
+
 .up-arrow {
     width: 3rem;
     height: 3rem;
@@ -362,7 +362,7 @@ nav ul li {
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
     }
-    
+
     p {
         font-size: 16px;
     }
@@ -373,7 +373,7 @@ nav ul li {
     .burger-menu {
         display: block;
     }
-    
+
     nav ul.show {
         transform: translateX(0);
     }
@@ -387,16 +387,16 @@ nav ul li {
         /* padding: 20px; */
         /* margin: 0; */
     }
-    
+
     .cover-header {
         width: 100%;
     }
-    
+
     .hero img {
         height: 37.5rem;
         width: 30rem;
     }
-    
+
     .bio {
         margin-top: -7rem;
         width: 20.5rem;
@@ -410,7 +410,7 @@ nav ul li {
     .projects-container {
         flex-direction: column;
     }
-    
+
     .project-container {
         width: 20.875rem;
     }
@@ -418,7 +418,7 @@ nav ul li {
     .contact-form-container {
         max-width: 23.75rem;
     }
-    
+
     .job-item {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -428,7 +428,7 @@ nav ul li {
         width: 2rem;
         height: 2rem;
         border-radius: 60%;
-        
+
     }
 
     .education {
@@ -438,7 +438,7 @@ nav ul li {
 
     .education p {
         width: auto;
-        
+
     }
 
     .skills {
@@ -458,17 +458,17 @@ nav ul li {
       height: 2rem;
       width: 2rem;
     }
-  
+
     .cover-header {
       width: 100%;
       margin: 0;
     }
-  
+
     .project-container {
       width: 17.875rem;
     }
-  
+
     .contact-form-container {
       max-width: 17.75rem;
     }
-} 
+}
