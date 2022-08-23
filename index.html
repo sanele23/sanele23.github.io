@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--CSS Styles -->
+    <!-- CSS & Bootstrap Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Favicons -->
@@ -27,17 +28,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <title>Sanele Krakra | Software Developer</title>
-      
+
       <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  
+
   </head>
 
   <body>
     <!-- Navbar -->
     <nav>
-        <h1><a href="#about">Sanele Krakra</a></h1>
+        <h1><a href="#home">Sanele Krakra</a></h1>
         <ul class="navigation">
+          <li><a href="#home" class="nav-link">Home</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#work" class="nav-link">Work</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -48,74 +50,123 @@
           <ion-icon class="bars" name="menu-outline"></ion-icon>
         </button>
   </nav>
-    <!-- Hero Section -->
-  <section class="hero" id="about">
-      
+    <!-- Hero/Cover Section -->
+  <section class="hero" id="home">
+
       <div class="cover-header">
         <h1 class="bio-title">Sanele Krakra</h1>
         <h3>Software Developer</h3>
-        <div class="socials">
-          <a href="https://twitter.com/Sanelekrakra" target="_blank"
-            ><img
-              src="icons/icons8-twitter-circled.gif"
-              alt="Twitter"
-              loading="lazy"
-              class="socicon"
-          /></a>
-          <a href="https://www.instagram.com/sanele.krakra/" target="_blank"
-            ><img
-              src="icons/icons8-instagram.gif"
-              alt="Instagram"
-              loading="lazy"
-              class="socicon"
-          /></a>
-          <a href="https://www.linkedin.com/in/sanele-krakra-b28aa4130/" target="_blank"
-            ><img
-              src="icons/icons8-linkedin-circled.gif"
-              alt="Linkedin"
-              loading="lazy"
-              class="socicon"
-          /></a>
-          <a href="https://github.com/sanele23" target="_blank"
-            ><img src="icons/icons8-github.gif" alt="Github" class="socicon"
-          /></a>
-          </div>
+        
       </div>
   </section>
 
-      <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section class="work" id="work">
-          <div class="content-wrap item-details divider">
-            <h2>Work Experience</h2>
-            <p>To view my full work history experience, visit my <a href="https://www.linkedin.com/in/sanele-krakra/">LinkedIn profile.</a></p>
-          
-            <!-- Copy this whole <section> block to add more jobs. -->
-              
-              <!-- Job 1 -->
-            <section class="job-item">
-                <div class="job-details">
-                    <h3>Junior Web Developer</h3>
-                    <p>HR Focus</p>
-                    <p>February 2018 - February 2019</p>
-                
-                </div>
-              
-                <div class="job-summary">
-                    <p>I have worked as a Junior Web Developer for 1 year.</p>
-                    <p>My responsibilities included:</p>
-                    
-                      - Adding features to the company's web system (ASP.Net, HTML/CSS, JavaScript)<br>
-                      - Configuring clocking systems to the network<br>
-                      - Reclassify data in the MySQL database<br>
-                      - Technical support
-                    
-                </div>
-              
-            </section>
+  <!-- ***********************  About Me  *********************** -->
 
-            <!-- End of Job block. -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <!-- Profile Picture -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" 
+          src="https://avatars.githubusercontent.com/u/36301256?s=400&u=e6c95a0bd8d7636d52eaba954ccfdccd8861746e&v=4"
+          alt="profile picture of instructor" 
+          width="236"
+          height="236">
         </div>
-      </section>
+
+        <!-- Details About Me -->
+        <div class="col-lg-8">
+          <div class="instructor">
+            <div class="instructor-details">
+              <h2 class="mt-5">Sanele Krakra</h2>
+              <!-- <h3>Sanele Krakra</h3> -->
+              <h5>Software Developer</h5>
+            </div>
+            
+          </div>
+          <br>
+          <p>Hello there,</p>
+          <p>
+            I am a Software Developer with emphasis in web and computer programming. I have a one year working experience as a Junior Web Developer.
+          </p>
+
+          <p>
+            I have excellent communication skills with the ability to work directly with clients to provide outstanding customer service.
+          </p>
+
+          <p>
+            More details about my skills and projects I've taken part can be found on my <a href="https://github.com/sanele23">Github repositories.</a> 
+          </p>
+          <p>
+            If you have any question, feel free to reach out to me using the social platforms below.
+          </p>
+          <div class="socials">
+            <a href="https://twitter.com/Sanelekrakra" target="_blank"
+              ><img
+                src="icons/icons8-twitter-circled.gif"
+                alt="Twitter"
+                loading="lazy"
+                class="socicon"
+            /></a>
+            <a href="https://www.instagram.com/sanele.krakra/" target="_blank"
+              ><img
+                src="icons/icons8-instagram.gif"
+                alt="Instagram"
+                loading="lazy"
+                class="socicon"
+            /></a>
+            <a href="https://www.linkedin.com/in/sanele-krakra-b28aa4130/" target="_blank"
+              ><img
+                src="icons/icons8-linkedin-circled.gif"
+                alt="Linkedin"
+                loading="lazy"
+                class="socicon"
+            /></a>
+            <a href="https://github.com/sanele23" target="_blank"
+              ><img src="icons/icons8-github.gif" alt="Github" class="socicon"
+            /></a>
+            </div>
+          </div>
+            
+  
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- ***********************  WORK EXPERIENCE  *********************** -->
+  <section class="work" id="work">
+      <div class="content-wrap item-details divider">
+        <h2>Work Experience</h2>
+        <p>To view my full work history experience, visit my <a href="https://www.linkedin.com/in/sanele-krakra/">LinkedIn profile.</a></p>
+
+        <!-- Copy this whole <section> block to add more jobs. -->
+
+          <!-- Job 1 -->
+        <section class="job-item">
+            <div class="job-details">
+                <h3>Junior Web Developer</h3>
+                <p>HR Focus</p>
+                <p>February 2018 - February 2019</p>
+
+            </div>
+
+            <div class="job-summary">
+                <p>I have worked as a Junior Web Developer for 1 year.</p>
+                <p>My responsibilities included:</p>
+
+                  - Adding features to the company's web system (ASP.Net, HTML/CSS, JavaScript)<br>
+                  - Configuring clocking systems to the network<br>
+                  - Reclassify data in the MySQL database<br>
+                  - Technical support
+
+            </div>
+
+        </section>
+
+        <!-- End of Job block. -->
+    </div>
+  </section>
     <!-- Skills section -->
     <section class="skills" id="skills">
       <h2 class="skill-header">My Top Skills</h2>
@@ -203,7 +254,7 @@
           />
           <h3 class="project-title">Asteroid Game</h3>
           <p class="project-details">
-            Classic asteroid game. The purpose of the game if to evade and destroy asteroid objects that 
+            Classic asteroid game. The purpose of the game if to evade and destroy asteroid objects that
             threaten to destroy your ship. The game was built using the Python: <br><br>
             <span>Arcade Library</span>.
           </p>
@@ -235,7 +286,7 @@
           />
           <h3 class="project-title">NBA Data Analysis</h3>
           <p class="project-details">
-            Use Python to process NBA data file (csv), calculate values, and produce graphs. 
+            Use Python to process NBA data file (csv), calculate values, and produce graphs.
             The tools used for this project include:<br><br>
              <span>Pandas | Matplotlib| Seaborn</span>.
           </p>
@@ -250,19 +301,19 @@
           <div class="content-wrap item-details">
             <h2>Education</h2>
               <br>
-              
+
             <!-- Copy this whole <section> block to add more schools. -->
-              
+
               <!-- Education 1 -->
             <section>
               <h3>Brigham Young University-Idaho</h3>
               <p>Bachelor of Science Degree in Applied Technology: 2021 - present</p>
               <br>
               <p>
-                The bachelor’s degree in applied technology helps students prepare 
-                for careers in software and web development, information technology, 
-                and other technology-related fields. Students gain specific technical skills by selecting 
-                from a variety of options, including computer support, programming, web and database development, 
+                The bachelor’s degree in applied technology helps students prepare
+                for careers in software and web development, information technology,
+                and other technology-related fields. Students gain specific technical skills by selecting
+                from a variety of options, including computer support, programming, web and database development,
                 and system administration.
               </p>
             </section>
@@ -283,7 +334,7 @@
               <p>Higher Certificate in Information Technology Information Systems, 2015 - 2015</p>
               <br>
               <p>
-                A one year certificate that introduces a student to the world of IT. By the end of the course, 
+                A one year certificate that introduces a student to the world of IT. By the end of the course,
                 the student will be suitable for these entry level jobs:
               </p>
                 - Junior Programmer<br>
@@ -300,7 +351,7 @@
       class="socicon up-arrow"
       alt="scroll-up"/> </i>
     <!-- Footer section -->
-    
+
     <!-- Website scripts -->
     <script src="js/app.js"></script>
 
