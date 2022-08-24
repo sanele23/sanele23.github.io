@@ -177,23 +177,29 @@ nav ul li {
     padding: 0.3rem 0;
 }
 
+.button-cv {
+    background-color: transparent;
+    width: 200px;
+    border: 1px solid white;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+.button-cv a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+.button-cv:hover {
+    background-color: #daa941;
+    color: #000;
+}
 /* ---------- More about me ---------- */
-/*
-.more-about {
-    background-color: var(--bg-color);
-    padding: 1rem 6rem;
-}
 
-.more-about h2 {
-    margin-bottom: var(--bottom-margin);
-    text-align: center;
-}
-
-.more-about p {
-    line-height: var(--line-height);
-    padding: 0.4rem;
-}
-*/
 .work {
     padding: 40px;
     color: #343434;
