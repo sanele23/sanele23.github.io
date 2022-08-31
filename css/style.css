@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&family=M+PLUS+1p:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Quicksand&display=swap');
 /* Variables */
 
 :root {
-    --font-family: 'Comfortaa', cursive;
+    --font-family: 'Montserrat', sans-serif;
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
@@ -83,6 +84,7 @@ a:hover {
 
 body {
     font-family: var(--font-family);
+    background: linear-gradient(100deg, #e5e6cb, #c5954e);
 }
 
 /* --------- NAV ---------- */
@@ -161,15 +163,15 @@ nav ul li {
 } */
 
 .bio-title {
-    font-family: 'M PLUS 1p', sans-serif;
+    /* font-family: 'M PLUS 1p', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     color: var(--bg-color);
     text-align: center;
     border-bottom: 1px solid #343434;
-    /* width: 25rem; */
     padding: 0.625rem;
-    /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
 }
+
 
 
 .bio p {
@@ -177,10 +179,12 @@ nav ul li {
     padding: 0.3rem 0;
 }
 
-.button-cv {
-    background-color: transparent;
+/* project button */
+
+.button-project {
+    background-color: bisque;
     width: 200px;
-    border: 1px solid white;
+    border: 1.5px solid white;
     font-size: 12px;
     color: #fff;
     text-transform: uppercase;
@@ -189,13 +193,25 @@ nav ul li {
     cursor: pointer;
 }
 
+.button-cv {
+    background-color: bisque;
+    width: 200px;
+    border: 1px solid white;
+    font-size: 16px;
+    color: #fff;
+    /* text-transform: uppercase; */
+    border-radius: 20px;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
 .button-cv a {
     text-decoration: none;
-    color: var(--bg-color);
+    color: #000;
 }
 
 .button-cv:hover {
-    background-color: #daa941;
+    background: linear-gradient(100deg, #e5e6cb, #c5954e);
     color: #000;
 }
 
@@ -204,6 +220,7 @@ nav ul li {
 .work {
     padding: 40px;
     color: #343434;
+    background: linear-gradient(100deg, #e5e6cb, #c5954e);
 }
 
 .job-item {
@@ -214,12 +231,12 @@ nav ul li {
 /* ---------- Skills ---------- */
 .skills {
     /* color: #fcfcfc; */
-    background-color: #e6e0e0;
+    background: linear-gradient(100deg, #e5e6cb, #c5954e);
     padding: 80px;
     max-width: 100%;
     margin: auto;
     text-align: center;
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
 }
 
 .skill-header {
@@ -246,7 +263,7 @@ nav ul li {
 /* ---------- Projects ---------- */
 .projects {
     padding: 100px;
-    background-color: var(--bg-color);
+    background: linear-gradient(100deg, #e5e6cb, #c5954e);
     /* padding: 32px 0; */
     /* margin-top: 2rem; */
 }
@@ -344,12 +361,12 @@ nav ul li {
 /* About Section */
 
 .about {
-  background: #d8e6e5;
-  background-size: cover;
-  padding: 40px;
-  width: 100%;
-  height: 100%;
-  color: #000;
+    background: linear-gradient(100deg, #e5e6cb, #c5954e);
+    background-size: cover;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    color: #000;
 }
 
 /* .mt-5 {
