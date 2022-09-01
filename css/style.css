@@ -292,24 +292,19 @@ nav ul li {
     margin-bottom: 1rem;
 }
 
-/* .project-container {
-    text-align: center;
-    width: 21.875rem;
-    padding: 1rem;
-} */
-
 .card {
-    background-color: white;
+    background: linear-gradient(100deg, #551f94, #501b94);
     width: 290px;
     /* height: 400px; */
     margin: 10px;
     border-radius: 15px;
+    color: #e5e6cb;
 }
 
 /* style image */
 .card-image {
     /* background-color: aqua; */
-    height: 170px;
+    height: 180px;
     margin-bottom: 15px;
     background-size: cover;
     border-radius: 15px 15px 0 0;
@@ -317,15 +312,15 @@ nav ul li {
 
 /* add image to the background space*/
 .car-1 {
-    background-image: url('../images/asteroids-game.png');
+    background-image: url('https://www.freecodecamp.org/news/content/images/2022/03/comments-python.jpg');
 } 
 
 .car-2 {
-    background-image: url('../images/skeet-game.png');
+    background-image: url('https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149024129.jpg?w=2000');
 }
 
 .car-3 {
-    background-image: url('../images/data-analysis.png');
+    background-image: url('https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200423211152/Top-20-Adobe-Creative-Cloud-Apps.png');
 }
 
 /* padding */
@@ -334,8 +329,9 @@ nav ul li {
 }
 
 .card a {
-    background-color: rgb(62, 62, 62);
+    background: linear-gradient(100deg, #66537c, #8669ac);
     color: #fcfcfc;
+    text-decoration: none;
     cursor: pointer;
     padding: 15px 20px;
     display: block;
@@ -346,10 +342,6 @@ nav ul li {
     /* margin-bottom: 10px; */
 }
 
-/* .card a {
-    text-decoration: none;
-    color: #fcfcfc;
-} */
 /* ---------- Contact Us ---------- */
 .education {
     padding: 40px;
