@@ -229,6 +229,18 @@ nav ul li {
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
 }
+
+.job-item-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+
+.job-summary a {
+    color: green;
+    font-weight: 500;
+    text-decoration: none;
+}
 /* ---------- Skills ---------- */
 .skills {
     /* color: #fcfcfc; */
