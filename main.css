@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(27, 27, 27);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-title {
+    margin-bottom: var(--bottom-margin);
+}
+
+.card {
+    background-color: white;
+    width: 270px;
+    /* height: 400px; */
+    margin: 10px;
+    border-radius: 15px;
+}
+
+/* style image */
+.card-image {
+    /* background-color: aqua; */
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* add image to the background space*/
+.car-1 {
+    background-image: url('./images/asteroids-game.png');
+} 
+
+.car-2 {
+    background-image: url('./images/skeet-game.png');
+}
+
+.car-3 {
+    background-image: url('./images/data-analysis.png');
+}
+
+/* padding */
+.car-1, h2, p {
+    padding: 10px;
+}
+
+.button-project {
+    display: inline-block;
+    background-color: bisque;
+    width: 200px;
+    border: 1.5px solid white;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 10px 24px;
+    cursor: pointer;
+}

@@ -182,6 +182,7 @@ nav ul li {
 /* project button */
 
 .button-project {
+    display: inline-block;
     background-color: bisque;
     width: 200px;
     border: 1.5px solid white;
@@ -219,7 +220,7 @@ nav ul li {
 
 .work {
     padding: 40px;
-    color: #343434;
+    color: #000;
     background: linear-gradient(100deg, #e5e6cb, #c5954e);
 }
 
@@ -267,23 +268,10 @@ nav ul li {
     /* padding: 32px 0; */
     /* margin-top: 2rem; */
 }
-
-.project-pic {
-    width: 65%;
-    height: 60%;
-}
-
-/*
-.project-pic img{
-    width: 300;
-}
-*/
-
-.projects-container {
+.card-container {
     display: flex;
-    flex-basis: auto;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .projects-title {
@@ -292,32 +280,60 @@ nav ul li {
     margin-bottom: 1rem;
 }
 
-.project-container {
+/* .project-container {
     text-align: center;
     width: 21.875rem;
     padding: 1rem;
-}
+} */
 
-.project-container p {
-    padding: 0.4rem;
-}
-
-.project-title {
-    margin-bottom: var(--bottom-margin);
-}
-
-.project-details {
-    margin-bottom: var(--bottom-margin);
-}
-
-.project-card {
-    background-color: #fff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px var(--primary-shadow);
-    padding: 20px;
+.card {
+    background-color: white;
+    width: 300px;
+    /* height: 400px; */
     margin: 10px;
+    border-radius: 15px;
 }
 
+/* style image */
+.card-image {
+    /* background-color: aqua; */
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* add image to the background space*/
+.car-1 {
+    background-image: url('../images/asteroids-game.png');
+} 
+
+.car-2 {
+    background-image: url('../images/skeet-game.png');
+}
+
+.car-3 {
+    background-image: url('../images/data-analysis.png');
+}
+
+/* padding */
+.car-1, h2, p {
+    padding: 10px;
+}
+
+.button-project {
+    background-color: rgb(62, 62, 62);
+    color: #fcfcfc;
+    cursor: pointer;
+    transform: scale(1.03);
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.button-project a {
+    text-decoration: none;
+    color: #fcfcfc;
+}
 /* ---------- Contact Us ---------- */
 .education {
     padding: 40px;
@@ -500,11 +516,11 @@ nav ul li {
         height: 5.25rem;
     }
 
-    .projects-container {
+    .card-container {
         flex-direction: column;
     }
 
-    .project-container {
+    .card-container {
         width: 20.875rem;
     }
 
@@ -537,6 +553,7 @@ nav ul li {
     .skills {
         padding: 0%;
         padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     .work {
@@ -557,7 +574,7 @@ nav ul li {
       margin: 0;
     }
 
-    .project-container {
+    .card-container {
       width: 17.875rem;
     }
 
