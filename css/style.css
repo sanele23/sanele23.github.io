@@ -361,6 +361,9 @@ nav ul li {
     width: 60%;
 }
 
+h3, h4, h5 {
+    margin: 10px;
+}
 
 /* ---------- Social Icons ----------- */
 .socials {
