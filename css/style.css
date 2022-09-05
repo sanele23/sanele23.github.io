@@ -343,6 +343,10 @@ nav ul li {
     /* margin-bottom: 10px; */
 }
 
+#span-card {
+    font-weight: 700;
+    color: #f0cfb6;
+}
 /* ---------- Contact Us ---------- */
 .education {
     padding: 40px;
