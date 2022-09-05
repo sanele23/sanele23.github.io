@@ -294,8 +294,9 @@ nav ul li {
 
 .card {
     background: linear-gradient(100deg, #551f94, #501b94);
-    width: 290px;
+    width: 350px;
     /* height: 400px; */
+    border: none;
     margin: 10px;
     border-radius: 15px;
     color: #e5e6cb;
