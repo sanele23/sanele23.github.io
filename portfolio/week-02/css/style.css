@@ -1,0 +1,53 @@
+/* import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Quicksand&display=swap');
+
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(58, 167, 167);
+}
+
+.container {
+    width: 50%;
+    text-align: center;
+    margin-left: 350px;
+
+}
+
+.headline {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Form Styling */
+.form-one,
+.form-two,
+.form-three {
+    align-content: center;
+    background-color: aliceblue;
+    /* width: 400px; */
+    /* margin-left: 15%; */
+    padding: 40px;
+    border-radius: 3px;
+}
+
+.header-back {
+    color: #fff;
+    background: rgb(197, 138, 138);
+    padding: 20px;
+    margin-left: 0;
+}
+
+#inputOne,
+#inputTwo,
+#inputThree {
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
