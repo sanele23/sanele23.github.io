@@ -27,3 +27,17 @@ function sum(number) {
     }
     return total;
 }
+
+// Part Three
+function partThree() {
+    const numberOne = parseFloat(document.getElementById('valueOne').value);
+    const numberTwo = parseFloat(document.getElementById('valueTwo').value);
+
+    const outputTotal = document.getElementById('outputThree');
+
+    if ((numberOne !== NaN) & (numberTwo !== NaN)) {
+        const totalValue = numberOne + numberTwo;
+
+        outputTotal.innerHTML = 'Total: ' + totalValue;
+    }
+}
