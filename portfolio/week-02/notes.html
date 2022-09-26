@@ -4,22 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 02 JS notes</title>
+    <title>Week 02 JavaScript Notes</title>
+    <link rel="stylesheet" href="css/notes.css">
 </head>
 
 <body>
-    <h1>Week 02</h1>
+    <h1>Week 02 - Javascript: Novice to Ninja</h1>
 
-    <h2>Programming Basics</h2>
+    <!-- Part One: Programming Basics -->
+    <section class="part-one">
+        <h2>Programming Basics</h2>
 
-    <p>
-        Variables have to be declared before they can be used. From ES6 onwards, JavaScript uses the keywords const and
-        let to declare variables. The keyword const is used when the variable will not be reassigned to another value,
-        whereas let is used if the variable might be reassigned later in the program.
-    </p>
+        <p>
+            Variables have to be declared before they can be used. From ES6 onwards, JavaScript uses the keywords const
+            and
+            let to declare variables. The keyword const is used when the variable will not be reassigned to another
+            value,
+            whereas let is used if the variable might be reassigned later in the program.
+        </p>
 
-    <h2>Arrays, Logic and Loops</h2>
+    </section>
 
+    <!-- Part Two: Arrays, Logic and Loops -->
+    <section class="part-two">
+        <h2>Arrays, Logic and Loops</h2>
+        <p>
+            In JavaScript we have data structures such as arrays, sets, and maps. This chapter also included topics
+            based on
+            the different types of logical statements in JavaScript that allow the control flow of the program.
+        </p>
+        <h3>Arrays</h3>
+        <p>
+            An array is an ordered list of values. Here's an example of how to create an array on JavaScript: <br>
+        </p>
+        <span class="code-example">const myArray = ['eggs', 'milk', 'butter'];
+        </span>
+        <br>
+        <div class="extra-info">
+            <!-- adding -->
+            <h4>Adding Values to Arrays</h4>
+            <span class="code-example">myArray.push('juice');
+            </span>
+
+            <!-- removing -->
+            <h4>Removing Values from Arrays</h4>
+            <span class="code-example">delete myArray[3];
+            </span>
+
+
+            <!-- Destructuring Arrays -->
+            <h4>Destructuring Arrays</h4>
+            <p>
+                Destructuring an array is the concept of taking values out of an array and presenting them as individual
+                values.
+            </p>
+            <span class="code-example">const [x,y] = [1,2];
+            </span>
+
+            <!-- adding -->
+            <h4>Merging Arrays</h4>
+            <p>
+                The <em>concat()</em> method can be used to merge an array with one or more arrays:
+            </p>
+            <span class="code-example">myArray.concat(['spice', 'salt']);</span>
+
+            <!-- removing -->
+            <h4>The join() Method</h4>
+            <p>
+                A method that can be used to turn an array into a string that includes all items in an array. The values
+                are seperated by commas.
+            </p>
+            <span class="code-example">myArray.join();
+            </span>
+        </div>
+
+        <!-- Sets -->
+        <h3>Sets</h3>
+        <p>
+            Sets were introduced in ES6, as a data structure that represents a collection of unique values to
+            avoid having duplicate values.
+            <br>
+            Here's an example of how you can create a set:
+        </p>
+        <span class="code-example">const list = new Set();</span>
+    </section>
+
+
+
+
+    <!-- Third section -->
     <h2>Functions</h2>
 </body>
 

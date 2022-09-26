@@ -1,0 +1,29 @@
+/* import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Quicksand&display=swap');
+
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    margin: 45px;
+}
+
+.code-example {
+
+    background-color: rgb(46, 44, 44);
+    color: white;
+    padding: 10px;
+}
+
+.extra-info {
+    margin: 15px;
+    background: rgb(127, 147, 156);
+    color: #fff;
+    padding: 20px;
+    border: 1px solid black;
+}
