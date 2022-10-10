@@ -18,7 +18,7 @@ body {
 }
 
 .code-example {
-    width: 100%;
+
     background-color: rgb(46, 44, 44);
     color: white;
     padding: 10px;
@@ -30,4 +30,8 @@ body {
     color: #fff;
     padding: 20px;
     border: 1px solid black;
+}
+
+span {
+    color: red;
 }
