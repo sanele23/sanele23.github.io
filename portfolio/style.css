@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f0f0f0;
+    margin: 20px;
+}
+
+.aside-bar {
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.aside-bar li a {
+    text-decoration: none;
+    background-color: black;
+    color: #f0f0f0;
+    padding: auto;
+}
