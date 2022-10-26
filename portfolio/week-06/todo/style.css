@@ -202,7 +202,7 @@ input:checked~.bubble::after {
 
 .todo-item .todo-content input {
     color: var(--dark);
-    font-size: 0.9rem;
+    font-size: 1.125rem;
 }
 
 .todo-item .actions {
@@ -244,10 +244,22 @@ input:checked~.bubble::after {
     }
     #todo-list, .list {
         width: 100%;
-        display: flex;
+        display: block;
     }
-    .todo-item, .todo-content, .actions{
+    .todo-item .todo-content input {
+        color: var(--dark);
+        font-size: 0.9rem;
+    }
+    /* .actions {
         display: flex;
-        /* width: 100%; */
+        flex-wrap: wrap;
+    } */
+
+    .todo-item, .todo-content, .actions{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 10px;
     }
 }
