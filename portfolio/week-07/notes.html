@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 07 JavaScript Notes</title>
+    <link rel="stylesheet" href="css/notes.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Week 07 - Javascript: Novice to Ninja</h1>
+
+        <!-- Part One: Programming Basics -->
+        <section class="part-one">
+            <h2>Further Functions</h2>
+
+            <h3>Function Properties and Methods</h3>
+
+            <p>
+                Functions are first-class objects; this means that they 
+                have properties and methods themselves. 
+            </p>
+
+            <h3>Call and Apply Methods</h3>
+            <p>
+                The <span>call()</span> method can be used to set the value of <span>this</span> inside a function 
+                to an object that is provided as the first argument.
+            </p>
+
+            <span class="pic-example">
+                <img src="/portfolio/week-07/img/example-01.png" alt="Code example of using exceptions in JavaScript">
+            </span>
+
+            <p>
+                If the function that’s called requires any parameters, these need to be provided as arguments after the first argument, 
+                which is always the value of  <span>this</span>.
+            </p>
+
+            <h3>Custom Properties</h3>
+            <p>
+                A stack trace is a sequence of functions or method calls that lead to the point where the error
+                occurred. Stack trace works backwards from the point the error started to identify the sequence.
+            </p>
+
+            <span class="pic-example">
+                <img src="/portfolio/week-07/img/example-02.png" alt="Code example of using exceptions in JavaScript">
+            </span>
+            <br>
+
+        </section>
+
+        <br>
+        <!-- Part Two: Arrays, Logic and Loops -->
+        <section class="part-two">
+            <h2>Ajax</h2>
+
+            <p>
+                Ajax is a technique that allows web pages to communicate asynchronously with a server, 
+                and it dynamically updates web pages without reloading. By doing this, data is enabled to be sent 
+                and received in the background, and portions of a page is updated in response to user events whilst 
+                the rest of the program continues to run. <br>
+                <br>
+                Ajax revolutionalized how web pages worked... web pages were no longer static but dynamic applications.
+                <!-- <ul>
+                    <li></li>
+                </ul> -->
+            </p>
+
+            <h3>Clients and Servers</h3>
+            <p>
+                "A client, such as a web browser, will request a resource (usually a web page) from a server, which processes 
+                the request and sends back a response to the client."
+            </p>
+
+            <h3>A Brief History of Ajax</h3>
+            <p>
+                Data was first sent asynchronously by Microsoft in 1999 when they implemented 
+                XMLHTTP ActiveX control in Internet Explorer 5, using Javascript. However, asynchronously techniques started being 
+                noticed in 2004 and 2005 when Google launched Gmail and Google Maps, as these web applications use 
+                asynchronous loading techniques to improve user experience by changing the parts of the page without a full refresh.
+            </p>
+            <div>
+                <h4>Asynchronous</h4>
+                <p>
+                    When a request for data is sent, the program doesn’t have to stop and wait for the response. It can carry on running, 
+                    waiting for an event to fire when a response is received. By using callbacks to manage this, programs are able to run in 
+                    an efficient way, avoiding lag as data is transferred back and forth.
+                </p>
+
+                <h4>JavaScript</h4>
+                <p>
+                    Ajax enabled JavaScript to send requests and receive responses from a server, allowing content to be updated in real time.
+                </p>
+
+                <h4>XML</h4>
+                <p>
+                    XML documents were often used to return data. XMl was later replaced by JSON because it is more lightweight and easier to parse than XML.
+                </p>
+
+                <h4>Watch the video below to learn more about Ajax.</h4>
+                <!-- Youtube video link -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tHRNuBf_8xg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            </div>
+
+
+        </section>
+
+        <!-- Third section -->
+
+    </section>
+
+</body>
+
+</html>
