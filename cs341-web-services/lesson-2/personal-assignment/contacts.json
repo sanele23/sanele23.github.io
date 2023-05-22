@@ -1,0 +1,23 @@
+{
+  "contact": {
+    "firstName": "Sanele",
+    "lastName": "Krakra",
+    "email": "sanele23@test.com",
+    "favoriteColor": "Black",
+    "birthday": "28/01/85"
+  },
+  "contact2": {
+    "firstName": "Shawn",
+    "lastName": "Mendes",
+    "email": "smendes@test.com",
+    "favoriteColor": "Brown",
+    "birthday": "14/05/92"
+  },
+  "contact3": {
+    "firstName": "Asemahle",
+    "lastName": "Hope",
+    "email": "asemahlehope@test.com",
+    "favoriteColor": "Pink",
+    "birthday": "02/22/99"
+  }
+}
